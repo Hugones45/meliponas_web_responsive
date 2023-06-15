@@ -1,0 +1,41 @@
+{
+    "Especies": [
+        {
+            "name": "JATAI",
+            "about": "Sometimes confused with mosquitoes, this is one of the stingless bees that are most common in Brazil. They have great adaptability to both forested areas and urban environments. Their honey has excellent medicinal properties, and some studies suggest that it can be a good agent for combating cataracts in the eyes.",
+            "color": "red",
+            "id": 1
+        },
+        {
+            "name": "IRAI",
+            "about": "Its name comes from Tupi, and it means 'river of honey', which is curious because this bee doesn't produce as much honey. However, it produces a large quantity of propolis. It is a rather shy species and has the habit of sealing itself in some part of its hive in case of an attack.",
+            "color": "blue",
+            "id": 2
+        },
+        {
+            "name": "TATAIRA",
+            "about": "A bee with extremely defensive habits, engaging in massive attacks to defend its hive. It is nicknamed the 'fire bee' or 'caga-fogo' due to the fact that its jaws produce a stinging acid. This species also has the habit of invading other colonies and plundering pollen and honey reserves.",
+            "id": 3
+        },
+        {
+            "name": "IRATIM",
+            "about": "A kleptoparasitic bee that lives by raiding other colonies. When plundering other hives, its workers release volatile substances produced by their mandibular glands, which disrupt the communication among the bees of the host colony, causing their dispersal.",
+            "id": 4
+        },
+        {
+            "name": "BORA",
+            "about": "Very similar to the jatai bees, but the bora bee is larger and even more defensive than its smaller counterparts, earning them the nickname 'jataizão' (big jatai). They produce a very peculiar honey that has a pronounced acidity and is slightly salty, with an aroma reminiscent of Parmesan cheese.",
+            "id": 5
+        },
+        {
+            "name": "ARAPUA",
+            "about": "Also known as 'dog bees', they are extremely defensive and have a habit of getting entangled in the fur of their aggressors. They are one of the few species that nests externally, meaning they construct their colonies instead of occupying cavities. Their hives are made of clay and resemble large termite mounds.",
+            "id": 6
+        },
+        {
+            "name": "MIRIM",
+            "about": "These bees are very small, usually measuring less than 4mm in length. Their diminutive size allows them to nest in almost any place, including forests, rocky environments, and even cities. Despite their small size, they have great physical resilience and are less susceptible to diseases.",
+            "id": 7
+        }
+    ]
+}

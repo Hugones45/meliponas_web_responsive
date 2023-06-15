@@ -1,0 +1,60 @@
+.uperContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.alinha {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    line-break: anywhere;
+    flex-direction: column;
+    gap: -1px;
+}
+
+.buttonsForBeeWords {
+    border: 0;
+    font-size: 40px;
+    background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 4px solid black;
+}
+
+.buttonsForBeeWords:hover {
+    background: linear-gradient(to right, rgb(77, 249, 47), rgb(246, 183, 106));
+
+}
+
+.buttonsForBeeWords:active {
+
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.forTheWords {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.forWrongNames {
+    font-size: 30px;
+    font-weight: bold;
+}

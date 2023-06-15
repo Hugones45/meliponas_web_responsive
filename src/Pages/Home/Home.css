@@ -1,0 +1,23 @@
+.homeContainer {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(182, 185, 120), rgb(249, 241, 136), rgb(185, 247, 217));
+    padding: 40px;
+}
+
+.sendErase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+}
+
+.dotBee {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    background-color: red;
+    display: block;
+    cursor: pointer;
+}

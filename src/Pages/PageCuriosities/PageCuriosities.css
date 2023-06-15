@@ -1,0 +1,19 @@
+.greaTdiv {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 90px;
+
+}
+
+.flippeable-card-container {
+    height: 500px;
+    width: 1200px;
+    max-height: 500px;
+    max-width: 1200px;
+    perspective: 1000px;
+    position: relative;
+
+}

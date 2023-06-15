@@ -1,0 +1,25 @@
+.theNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #FDDA0D;
+
+}
+
+a {
+    color: #000;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    color: yellow;
+}
