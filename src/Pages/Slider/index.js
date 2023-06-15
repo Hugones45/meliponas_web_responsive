@@ -7,36 +7,203 @@ import hive1 from "../../assets/forTheSlide/hive1.jpg"
 import hive2 from "../../assets/forTheSlide/hive2.jpg"
 import solitarybee3 from "../../assets/forTheSlide/solitarybee3.jpg"
 import solitarybee1 from "../../assets/forTheSlide/solotarybee1.jpg"
+import iratim1 from "../../assets/forTheSlide/33.jpg"
+import urucu from "../../assets/forTheSlide/urucu.jpg"
+import jatai from "../../assets/forTheSlide/jatai.jpeg"
+import mandacaia from "../../assets/forTheSlide/mandacaia.jpg"
+import anotheriratim from "../../assets/forTheSlide/anotheriratim.jpg"
+import iratim2 from "../../assets/forTheSlide/iratim2.jpg"
+import gianbee from "../../assets/forTheSlide/giantbee1.png"
+import giantbee2 from "../../assets/forTheSlide/wallacegiantbee.jpg"
+import giantbee3 from "../../assets/forTheSlide/190221-bee-megachile-pluto-ac-504p.jpg"
+import beeentrance1 from "../../assets/forTheSlide/abelhas-sem-ferrao-mel-de-excelente-qualidade-3-cpt.jpg"
+import urucuentrance from "../../assets/forTheSlide/urucuentrance.png"
+import jataientrance from "../../assets/forTheSlide/jataientrance.bmp"
+import lambeolhoscolmeia from "../../assets/forTheSlide/lambeolhoscolmeia.jpg"
+import beehive40 from "../../assets/forTheSlide/beehive40.jpg"
+import greathives from "../../assets/forTheSlide/238160_web.jpg"
+import alicerce from "../../assets/forTheSlide/alicerce.jpg"
+import polen from "../../assets/forTheSlide/polem.jpg"
+import bumble1 from "../../assets/forTheSlide/bumble1.jpg"
+import bumble2 from "../../assets/forTheSlide/bumble2.jpg"
+import bumble3 from "../../assets/forTheSlide/buble3.jpg"
+import beesol1 from "../../assets/forTheSlide/solitary33.jpg"
+import beesol2 from "../../assets/forTheSlide/solotary44.jpg"
+import layeggs from "../../assets/forTheSlide/solitarylayeggs.jpg"
+import greensol from "../../assets/forTheSlide/solitarybee2.bmp"
+import jataiprincipal from "../../assets/forTheSlide/jataipreincipal.bmp"
+import tataira from "../../assets/forTheSlide/tataira.jpg"
+import iraia from "../../assets/forTheSlide/iraia.jpg"
+import mirim from "../../assets/forTheSlide/mirim.jpg"
 
-
+import queen1 from "../../assets/forTheSlide/queen1.jpg"
+import queen2 from "../../assets/forTheSlide/queen2.jpg"
+import queen3 from "../../assets/forTheSlide/queen3.jpg"
 
 export const Slider = () => {
 
     const images = [
         {
-            id: 1,
-            beeImg: hive1,
-            title: "Hives",
+            id: Math.random(),
+            beeImg: bluebeesolitary,
+
         },
         {
-            id: 2,
+            id: Math.random(),
+            beeImg: solitarybee3,
+        },
+        {
+            id: Math.random(),
+            beeImg: solitarybee1,
+        },
+        {
+            id: Math.random(),
+            beeImg: greensol
+        },
+        {
+            id: Math.random(),
+            beeImg: beesol1,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: beesol2,
+        },
+        {
+            id: Math.random(),
+            beeImg: layeggs
+        },
+        {
+            id: Math.random(),
+            beeImg: gianbee,
+        },
+        {
+            id: Math.random(),
+            beeImg: giantbee2,
+        },
+        {
+            id: Math.random(),
+            beeImg: giantbee3,
+        },
+        {
+            id: Math.random(),
+            beeImg: bumble1,
+        },
+        {
+            id: Math.random(),
+            beeImg: bumble2,
+        },
+        {
+            id: Math.random(),
+            beeImg: bumble3,
+        },
+        {
+            id: Math.random(),
             beeImg: hive2,
         },
         {
-            id: 3,
-            beeImg: bluebeesolitary,
-            title: "solitary",
-        },
-        {
-            id: 4,
-            beeImg: solitarybee3,
+            id: Math.random(),
+            beeImg: beehive40,
 
         },
         {
-            id: 5,
-            beeImg: solitarybee1,
+            id: Math.random(),
+            beeImg: greathives,
+        },
+        {
+            id: Math.random(),
+            beeImg: alicerce
+        },
+        {
+            id: Math.random(),
+            beeImg: hive1,
 
         },
+        {
+            id: Math.random(),
+            beeImg: lambeolhoscolmeia,
+        },
+        {
+            id: Math.random(),
+            beeImg: polen,
+        },
+
+
+
+
+
+        ,
+        {
+            id: Math.random(),
+            beeImg: queen1,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: queen2,
+        },
+        {
+            id: Math.random(),
+            beeImg: queen3,
+        },
+        {
+            id: Math.random(),
+            beeImg: jataientrance,
+        },
+        {
+            id: Math.random(),
+            beeImg: beeentrance1,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: urucuentrance,
+
+
+        },
+        {
+            id: Math.random(),
+
+            beeImg: iratim1,
+        },
+        {
+            id: Math.random(),
+            beeImg: iratim2,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: anotheriratim,
+        },
+        {
+            id: Math.random(),
+
+            beeImg: urucu,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: jataiprincipal,
+
+        },
+        {
+            id: Math.random(),
+            beeImg: tataira,
+        },
+        {
+            id: Math.random(),
+            beeImg: mandacaia,
+        },
+        ,
+        {
+            id: Math.random(),
+            beeImg: mirim,
+        },
+        {
+            id: Math.random(),
+            beeImg: iraia,
+        }
+
     ]
 
     const carousel = useRef()
