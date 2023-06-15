@@ -13,7 +13,7 @@ import { useCounterValue } from "../../context/CounterContext"
 
 export const Home = () => {
 
-    const url = "http://localhost:3000/Especies"
+    const url = "https://json-bee.vercel.app/Especies"
 
     const [beeWords, setBeeWords] = useState('')
     const [selectBee, setSelectBee] = useState(null)
