@@ -1,17 +1,19 @@
 .fade-in-text {
-    font-family: Arial;
-    font-size: 20px;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
+  font-family: Arial;
+  font-size: 20px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
 
+  text-align: center;
+  font-family: Roboto, SemiBold 600;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

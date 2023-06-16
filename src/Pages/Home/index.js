@@ -7,6 +7,9 @@ import { AnswerButton } from "../../components/AnswerButton"
 import { BeesImages } from "../../components/BeesImages"
 import { Button } from "../../components/button/Button"
 
+import { GiBee } from "react-icons/gi"
+import { motion } from "framer-motion"
+
 import "./Home.css"
 
 import { useCounterValue } from "../../context/CounterContext"
@@ -19,6 +22,10 @@ export const Home = () => {
     const [selectBee, setSelectBee] = useState(null)
     const [toggle, setToggle] = useState(false)
     const [wrongName, setWrongName] = useState('')
+
+    const [answerBees, setAnswerBees] = useState(false)
+    const [phrase, setPhrase] = useState('')
+    const [number, setNumber] = useState(0)
 
     const { dataValue: bees } = useFetch(url)
     const { counter, setCounter } = useCounterValue()
@@ -44,8 +51,6 @@ export const Home = () => {
         setWrongName('')
     }
 
-    const [toggleBee, setToggleBee] = useState(false)
-
     const handleButton = (e) => {
         e.preventDefault()
 
@@ -65,6 +70,17 @@ export const Home = () => {
     const findColor = (theName) => {
         const findBeeColor = bees.find((item) => item.name === theName)['color']
         return findBeeColor
+    }
+
+    const answerFunction = () => {
+        setNumber(number + 1)
+        if (number === 0) {
+            setPhrase('Are you sure you want to see the answers?')
+        } else if (number > 0) {
+            setPhrase('')
+            setAnswerBees(!answerBees)
+        }
+
     }
 
     return (
@@ -95,8 +111,20 @@ export const Home = () => {
                         about={selectBee.about}
                     />
                 </>}
-            <AnswerButton beeToggleValue={toggleBee} changeToggleBee={() => setToggleBee(!toggleBee)} />
 
-        </div>
+            <AnswerButton propToggle={answerBees} number={number} setPhrase={setPhrase} phrase={phrase} />
+            <div className="fortheBee">
+                <motion.div
+
+                    animate={{ x: [0, 1000, 0] }}
+                    transition={{ repeat: Infinity, duration: 25 }}
+                >
+                    <GiBee className="theLittleBee" size={60} onClick={() => answerFunction()} />
+
+
+                </motion.div>
+            </div>
+
+        </div >
     );
 }
