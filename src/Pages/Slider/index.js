@@ -5,17 +5,11 @@ import "./Slider.css"
 import bluebeesolitary from "../../assets/forTheSlide/bluebeesolitary.bmp"
 import hive1 from "../../assets/forTheSlide/hive1.jpg"
 import hive2 from "../../assets/forTheSlide/hive2.jpg"
-import solitarybee3 from "../../assets/forTheSlide/solitarybee3.jpg"
 import solitarybee1 from "../../assets/forTheSlide/solotarybee1.jpg"
 import iratim1 from "../../assets/forTheSlide/33.jpg"
 import urucu from "../../assets/forTheSlide/urucu.jpg"
-import jatai from "../../assets/forTheSlide/jatai.jpeg"
-import mandacaia from "../../assets/forTheSlide/mandacaia.jpg"
 import anotheriratim from "../../assets/forTheSlide/anotheriratim.jpg"
 import iratim2 from "../../assets/forTheSlide/iratim2.jpg"
-import gianbee from "../../assets/forTheSlide/giantbee1.png"
-import giantbee2 from "../../assets/forTheSlide/wallacegiantbee.jpg"
-import giantbee3 from "../../assets/forTheSlide/190221-bee-megachile-pluto-ac-504p.jpg"
 import beeentrance1 from "../../assets/forTheSlide/abelhas-sem-ferrao-mel-de-excelente-qualidade-3-cpt.jpg"
 import urucuentrance from "../../assets/forTheSlide/urucuentrance.png"
 import jataientrance from "../../assets/forTheSlide/jataientrance.bmp"
@@ -32,9 +26,7 @@ import beesol2 from "../../assets/forTheSlide/solotary44.jpg"
 import layeggs from "../../assets/forTheSlide/solitarylayeggs.jpg"
 import greensol from "../../assets/forTheSlide/solitarybee2.bmp"
 import jataiprincipal from "../../assets/forTheSlide/jataipreincipal.bmp"
-import tataira from "../../assets/forTheSlide/tataira.jpg"
-import iraia from "../../assets/forTheSlide/iraia.jpg"
-import mirim from "../../assets/forTheSlide/mirim.jpg"
+
 
 import queen1 from "../../assets/forTheSlide/queen1.jpg"
 import queen2 from "../../assets/forTheSlide/queen2.jpg"
@@ -48,10 +40,7 @@ export const Slider = () => {
             beeImg: bluebeesolitary,
 
         },
-        {
-            id: Math.random(),
-            beeImg: solitarybee3,
-        },
+
         {
             id: Math.random(),
             beeImg: solitarybee1,
@@ -72,18 +61,6 @@ export const Slider = () => {
         {
             id: Math.random(),
             beeImg: layeggs
-        },
-        {
-            id: Math.random(),
-            beeImg: gianbee,
-        },
-        {
-            id: Math.random(),
-            beeImg: giantbee2,
-        },
-        {
-            id: Math.random(),
-            beeImg: giantbee3,
         },
         {
             id: Math.random(),
@@ -127,12 +104,6 @@ export const Slider = () => {
             id: Math.random(),
             beeImg: polen,
         },
-
-
-
-
-
-        ,
         {
             id: Math.random(),
             beeImg: queen1,
@@ -158,8 +129,6 @@ export const Slider = () => {
         {
             id: Math.random(),
             beeImg: urucuentrance,
-
-
         },
         {
             id: Math.random(),
@@ -179,31 +148,11 @@ export const Slider = () => {
             id: Math.random(),
 
             beeImg: urucu,
-
         },
         {
             id: Math.random(),
             beeImg: jataiprincipal,
-
-        },
-        {
-            id: Math.random(),
-            beeImg: tataira,
-        },
-        {
-            id: Math.random(),
-            beeImg: mandacaia,
-        },
-        ,
-        {
-            id: Math.random(),
-            beeImg: mirim,
-        },
-        {
-            id: Math.random(),
-            beeImg: iraia,
         }
-
     ]
 
     const carousel = useRef()
