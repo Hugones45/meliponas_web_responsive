@@ -1,4 +1,5 @@
 import "./BeesButtons.css"
+import { AiOutlineArrowDown } from "react-icons/ai"
 
 export const BeesButtons = ({ getMeliWordOne, getMeliWordTwo, words, wrongName }) => {
 
@@ -22,6 +23,10 @@ export const BeesButtons = ({ getMeliWordOne, getMeliWordTwo, words, wrongName }
                 <div className="letter">
                     <p className="forTheWords">{words}</p>
                     <p className="forWrongNames">{wrongName}</p>
+                    <div className="hintBee">
+                        <p>Try to guess a malipona name! Or scroll down and click in the bee!</p>
+                        <h2><AiOutlineArrowDown /></h2>
+                    </div>
                 </div>
                 <div className="alinha">
                     {meliTwo.map((item, index) =>

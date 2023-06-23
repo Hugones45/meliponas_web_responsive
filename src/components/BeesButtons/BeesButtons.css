@@ -58,3 +58,13 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.hintBee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 400px;
+    font-weight: bold;
+}

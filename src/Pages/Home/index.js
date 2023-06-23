@@ -7,6 +7,7 @@ import { AnswerButton } from "../../components/AnswerButton"
 import { BeesImages } from "../../components/BeesImages"
 import { Button } from "../../components/button/Button"
 
+
 import { GiBee } from "react-icons/gi"
 import { motion } from "framer-motion"
 
@@ -94,11 +95,8 @@ export const Home = () => {
             />
 
             <div className="sendErase">
-
                 <Button functions={handleButton} text='Send' />
-
                 <UpValue cleanValue={removeWord} />
-
             </div>
 
             {toggle && selectBee &&
