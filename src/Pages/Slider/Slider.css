@@ -1,17 +1,22 @@
+
+
+
 .theSlideShow {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .inner {
     display: flex;
+    flex-wrap: nowrap; /* Ensures that images do not wrap */
+    
 }
-
 
 .theImagesItens {
     min-height: 200px;
@@ -20,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -29,9 +35,35 @@
     height: 90%;
     border-radius: 12px;
     pointer-events: none;
+    position: relative;
+    top: 30px;
+   
 }
+
 
 .carousel {
     cursor: grab;
     overflow: hidden;
 }
+
+/*NEST HUB*/
+@media (width: 1024px) and (height: 600px) {
+    .theImagesItens {
+        min-height: 200px;
+        min-width: 500px;
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .theImagesItens img {
+        width: 80%;
+        height: 80%;
+        border-radius: 12px;
+        pointer-events: none;
+    }
+}
+
+
