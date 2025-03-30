@@ -11,6 +11,9 @@ export const PageCuriosities = () => {
 
     return (
         <div className={styles.main_container}>
+
+            <button className={styles.buttonsForBeeChange} onClick={() => setFlip(!flip)}>Meli-Apis!</button>
+
             <motion.div
                 className={styles.cardContainer}
                 animate={{ rotateY: flip ? 180 : 0 }}
@@ -23,7 +26,7 @@ export const PageCuriosities = () => {
                     style={{ backfaceVisibility: "hidden" }}
                 >
                     <div className={styles.blockContainer}>
-                        <img onClick={() => setFlip(!flip)}
+                        <img
                             src={meliponiculture} alt="Meliponiculture" className={styles.cardImage} />
                         <div className={styles.description_container} >
                             <h1>Meliponiculture</h1>
@@ -41,7 +44,7 @@ export const PageCuriosities = () => {
                     style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
                 >
                     <div className={styles.blockContainer}>
-                        <img onClick={() => setFlip(!flip)}
+                        <img
                             src={apiculture} alt="Apiculture" className={styles.cardImage} />
 
                         <div className={styles.description_container}>
