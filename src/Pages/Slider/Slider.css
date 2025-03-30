@@ -12,11 +12,17 @@
     display: flex;
 }
 
+
 .theImagesItens {
     min-height: 200px;
-    min-width: 600px;
+    min-width: 500px;
     padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .theImagesItens img {
     width: 90%;

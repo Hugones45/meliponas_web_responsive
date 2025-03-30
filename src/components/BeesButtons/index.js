@@ -1,5 +1,7 @@
 import "./BeesButtons.css"
 import { AiOutlineArrowDown } from "react-icons/ai"
+import { GiBee } from "react-icons/gi"
+
 
 export const BeesButtons = ({ getMeliWordOne, getMeliWordTwo, words, wrongName }) => {
 
@@ -8,6 +10,17 @@ export const BeesButtons = ({ getMeliWordOne, getMeliWordTwo, words, wrongName }
     const meliOne = meliponas.slice(0, 5)
     const meliTwo = meliponas.slice(5,)
 
+    const answerFunction = () => {
+        // setNumber(number + 1)
+        // if (number === 0) {
+        //     setPhrase('Are you sure you want to see the answers?')
+        // } else if (number > 0) {
+        //     setPhrase('')
+        //     setAnswerBees(!answerBees)
+        // }
+
+    }
+
     return (
         <div className="uperContainer">
             <div className="container">
@@ -15,18 +28,23 @@ export const BeesButtons = ({ getMeliWordOne, getMeliWordTwo, words, wrongName }
                     {meliOne.map((item, index) =>
 
                         <button
-                            className="buttonsForBeeWords "
+                            className="buttonsForBeeWords"
                             onClick={() => getMeliWordOne(item)}
                             key={index}>{item}</button>
                     )}</div>
 
                 <div className="letter">
-                    <p className="forTheWords">{words}</p>
-                    <p className="forWrongNames">{wrongName}</p>
+
+                    <p className={`forTheWords ${wrongName ? "text-red" : ""}`}>{words}</p>
+
                     <div className="hintBee">
-                        <p>Try to guess a malipona name! Or scroll down and click in the bee!</p>
-                        <h2><AiOutlineArrowDown /></h2>
+                        {!wrongName ? <GiBee className="theLittleBee" size={60} /> :
+
+                            <p className="forWrongNames">{wrongName}</p>}
+
+
                     </div>
+
                 </div>
                 <div className="alinha">
                     {meliTwo.map((item, index) =>

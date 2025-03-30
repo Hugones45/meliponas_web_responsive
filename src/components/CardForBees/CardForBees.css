@@ -1,53 +1,127 @@
 .popupWrapper {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
     z-index: 10;
 }
 
 .popup {
-    font-family: arial;
+    font-family: Arial, sans-serif;
     text-align: center;
-    max-width: 700px;
-    max-height: 710px;
-    margin: 10% auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    max-height: 80vh; 
     background: white;
-    position: relative;
-    border: 8px solid;
     border-radius: 10px;
-    bottom: 144px;
-}
-
-
-.nameBeeCard {
     position: relative;
-    bottom: 90px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid; 
+    padding-bottom: 40px; 
+    max-height: 85vh; 
 }
 
-.text {
-    padding: 20px;
-    font-size: 30px;
-    position: relative;
-    bottom: 130px;
-
-}
-
-.closeButton {
+.cardsFindBee {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 125px;
+    margin-bottom: -80px;
+}
+
+.cardsFindBee img {
+    width: 100%;  
+    max-width: 300px; 
+    height: auto;
+    object-fit: contain;
+}
+
+/* NEST HUB */
+@media (width: 1024px) and (height: 600px) {
+    .cardsFindBee {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: 125px;
+        margin-bottom: -80px;
+    }
+}
+
+@media (max-width: 639px) {
+    .cardsFindBee img {
+        max-width: 90%;  
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .cardsFindBee img {
+        max-width: 95%;  
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cardsFindBee img {
+        max-width: 95%;  
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .cardsFindBee img {
+        max-width: 95%;  
+    }
+}
+
+@media (min-width: 1280px) {
+    .cardsFindBee img {
+        max-width: 95%;  
+    }
+}
+
+
+.text {
+
+    padding: 20px;
+    font-size: 18px;
+    overflow: auto; 
+    word-wrap: break-word;
+}
+
+.closeButton {
+    position: absolute;
+    top: -4px;
+    right: 12px;   
     background-color: #fff;
     color: #000;
     font-weight: bold;
-    position: relative;
-    right: 200px;
-    top: 200px;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    font-size: 20px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.closeButton:hover {
+    background-color: rgb(246, 186, 130);
+}
+
+.nameBeeCard {
+    margin-bottom: -7px;
 }

@@ -2,21 +2,75 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    position: relative;
+    top: 55px;
+
 }
 
 .container {
     display: flex;
     width: 65%;
     justify-content: space-between;
-    position: relative;
 }
 
 .alinha {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
+
+.forTheWords {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-red {
+    color: red;
+}
+
+@media (max-width: 639px) {
+    .letter .forTheWords {
+        font-size: 25px !important;
+    }
+
+    .forWrongNames {
+        font-size: 18px !important;
+
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .letter .forTheWords {
+        font-size: 25px !important;
+   
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .letter .forTheWords {
+        font-size: 30px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .letter .forTheWords {
+        font-size: 30px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .letter .forTheWords {
+        font-size: 35px !important;
+    }
+}
+
+.forWrongNames {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
 
 .letter {
     display: flex;
@@ -25,18 +79,110 @@
     padding: 30px;
     line-break: anywhere;
     flex-direction: column;
-    gap: -1px;
+    gap: 10px;
 }
 
 .buttonsForBeeWords {
     border: 0;
-    font-size: 40px;
+    font-size: 20px;
     background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
     border: 4px solid black;
 }
+
+@media (min-width: 640px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 25px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+
+   
+  }
+  
+  /* md: >= 768px */
+  @media (min-width: 768px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 30px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+  }
+  
+  /* lg: >= 1024px */
+  @media (min-width: 1024px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 35px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+
+    
+  }
+  
+  /* xl: >= 1280px */
+  @media (min-width: 1280px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 35px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+  }
+  
+  /* 2xl: >= 1536px */
+  @media (min-width: 1536px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 35px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+  }
+
+/* NEST HUB */
+  @media (width: 1024px) and (height: 600px) {
+    .buttonsForBeeWords {
+        border: 0;
+        font-size: 25px;
+        background: linear-gradient(to right, rgb(252, 232, 5), rgb(246, 183, 106));
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 4px solid black;
+    }
+
+    .container {
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+
+
+
+
 
 .buttonsForBeeWords:hover {
     background: linear-gradient(to right, rgb(77, 249, 47), rgb(246, 183, 106));
@@ -49,22 +195,17 @@
     transform: translateY(4px);
 }
 
-.forTheWords {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.forWrongNames {
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .hintBee {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 400px;
     font-weight: bold;
 }
+
+.hintBee h1 {
+margin-bottom:80px;
+color: red;
+
+}
+

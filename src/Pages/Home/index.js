@@ -3,13 +3,8 @@ import { BeesButtons } from "../../components/BeesButtons"
 import { UpValue } from "../../components/UpValue"
 import { CardsForBees } from "../../components/CardForBees"
 import { useFetch } from "../../hooks/useFetch"
-import { AnswerButton } from "../../components/AnswerButton"
 import { BeesImages } from "../../components/BeesImages"
 import { Button } from "../../components/button/Button"
-
-
-import { GiBee } from "react-icons/gi"
-import { motion } from "framer-motion"
 
 import "./Home.css"
 
@@ -110,19 +105,7 @@ export const Home = () => {
                     />
                 </>}
 
-            <AnswerButton propToggle={answerBees} number={number} setPhrase={setPhrase} phrase={phrase} />
-            <div className="fortheBee">
-                <motion.div
-
-                    animate={{ x: [0, 1000, 0] }}
-                    transition={{ repeat: Infinity, duration: 25 }}
-                >
-                    <GiBee className="theLittleBee" size={60} onClick={() => answerFunction()} />
-
-
-                </motion.div>
-            </div>
-
+            {/* <AnswerButton propToggle={answerBees} number={number} setPhrase={setPhrase} phrase={phrase} /> */}
         </div >
     );
 }

@@ -1,31 +1,41 @@
 .homeContainer {
-  min-height: 100vh;
   background: linear-gradient(
     to right,
     rgb(182, 185, 120),
     rgb(249, 241, 136),
     rgb(185, 247, 217)
   );
-  padding: 40px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sendErase {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 160px;
-}
-
-.fortheBee {
-  display: flex;
-  margin: 0;
-  position: relative;
-  bottom: 40px;
+  gap: 120px;
+  margin-top: 100px;
 }
 
 .theLittleBee {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: relative;
-  cursor: pointer;
-  top: 100px;
-  left: 100px;
+  bottom: 30px;
 }
+
+
+@media (width: 1024px) and (height: 600px) {
+  .sendErase {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+bottom: 80px;
+  }
+      }

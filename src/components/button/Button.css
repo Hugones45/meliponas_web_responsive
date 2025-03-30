@@ -7,7 +7,6 @@
     cursor: pointer;
     background-color: rgb(252, 179, 83);
     border: 3px solid rgb(252, 179, 83);
-    position: relative;
 }
 
 .geralButton:hover {

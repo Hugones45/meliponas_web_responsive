@@ -12,7 +12,11 @@ function App() {
 
 
   return (
-    <div >
+    <div style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+    }}>
       <NavBar />
 
       <Routes>
