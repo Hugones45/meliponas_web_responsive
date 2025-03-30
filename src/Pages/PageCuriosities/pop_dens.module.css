@@ -70,7 +70,6 @@ p {
     max-width: 600px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .blockContainer {
         flex-direction: column;
@@ -85,10 +84,9 @@ p {
         width: 100%;
         height: 60%;
         padding: 20px;
-        overflow-y: scroll; /* Force scrollbar */
+        overflow-y: scroll; 
     }
     
-    /* Remove any transforms on the backface content */
     .cardBack .description_container {
         transform: none;
     }

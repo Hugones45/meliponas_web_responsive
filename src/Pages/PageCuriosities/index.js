@@ -28,7 +28,7 @@ export const PageCuriosities = () => {
                         <div className={styles.description_container} >
                             <h1>Meliponiculture</h1>
                             <p style={{ zIndex: '10' }}>Melipoculture is the term used for the activity of raising stingless bees, commonly known as meliponas. Unlike beekeeping, the management of meliponas rarely requires protection, except for some species. Although meliponiculture has grown in recent years, many Brazilians are still unaware of native bees, and this is due to the historical lack of incentive and interest from the Brazilian government in ecology and wildlife preservation.</p>
-                            <p>Brazilian soil is home to more than 250 species of stingless bees, which play a crucial role in balancing the biomes. Cultivating these bees not only generates income but also provides knowledge about the land and benefits the entire ecosystem's health.</p>
+                            <p style={{ zIndex: '10' }}>Brazilian soil is home to more than 250 species of stingless bees, which play a crucial role in balancing the biomes. Cultivating these bees not only generates income but also provides knowledge about the land and benefits the entire ecosystem's health.</p>
 
                         </div>
 
