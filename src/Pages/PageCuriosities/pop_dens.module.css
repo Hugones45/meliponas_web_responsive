@@ -6,7 +6,11 @@
     gap: 40px;
     height: 100vh;
     width: 100vw;
-    background-color: #f4f4f4;
+    background: linear-gradient(
+        to right,
+        rgb(255, 227, 150),  /* Warm gold */
+        rgb(255, 239, 213)    /* Pale peach */
+      );
 }
 
 .cardContainer {

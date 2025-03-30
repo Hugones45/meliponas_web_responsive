@@ -9,12 +9,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background: linear-gradient(
+        to right,
+        rgb(224, 224, 252),  
+        rgb(255, 230, 235)    
+      );
 }
 
 .inner {
     display: flex;
-    flex-wrap: nowrap; /* Ensures that images do not wrap */
+    flex-wrap: nowrap;
     
 }
 
