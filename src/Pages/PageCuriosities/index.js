@@ -45,10 +45,11 @@ export const PageCuriosities = () => {
                             src={apiculture} alt="Apiculture" className={styles.cardImage} />
 
                         <div className={styles.description_container}>
-                            <h1>Apiculture</h1>
-                            <p><span style={{ zIndex: '10', position: 'relative' }} >Apiculture is the practice of raising honeybees of the Apis mellifera genus, which are exotic bees originating from Africa and Europe. They arrived in Brazil alongside the colonizers, and initially, their cultivation focused on wax production, which was widely used for religious activities. In modern times, apiculture has become a significant source of income and plays a crucial role in Brazil's economy.</span></p>
+                            <span style={{ zIndex: '10', position: 'relative' }} >
+                                <h1>Apiculture</h1>
+                                <p><span style={{ zIndex: '10', position: 'relative' }} >Apiculture is the practice of raising honeybees of the Apis mellifera genus, which are exotic bees originating from Africa and Europe. They arrived in Brazil alongside the colonizers, and initially, their cultivation focused on wax production, which was widely used for religious activities. In modern times, apiculture has become a significant source of income and plays a crucial role in Brazil's economy.</span></p>
 
-                            <p><span style={{ zIndex: '10', position: 'relative' }} >However, excessive management and disregard for ecological consequences have been threatening the balance of native fauna. It is important to remember that all bee species need to be preserved, and it is up to us, as caretakers, to find a safe path for their preservation and prosperity.</span></p>
+                                <p><span style={{ zIndex: '10', position: 'relative' }} >However, excessive management and disregard for ecological consequences have been threatening the balance of native fauna. It is important to remember that all bee species need to be preserved, and it is up to us, as caretakers, to find a safe path for their preservation and prosperity.</span></p></span>
                         </div>
 
                     </div>
