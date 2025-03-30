@@ -20,6 +20,9 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardBack {
@@ -33,7 +36,6 @@
     border: 6px solid #e4dd00;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden; 
 }
 
 .cardImage {
@@ -68,36 +70,27 @@ p {
     max-width: 600px;
 }
 
-/* Mobile Styles */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .cardContainer {
-        height: 80vh; 
-    }
-
     .blockContainer {
         flex-direction: column;
-        height: 100%;
     }
     
     .cardImage {
         width: 100%;
         height: 40%;
-        min-height: 40%;
-        flex-shrink: 0;
     }
     
     .description_container {
         width: 100%;
         height: 60%;
-        min-height: 60%;
         padding: 20px;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch; 
-        transform: none !important; 
+        overflow-y: scroll; /* Force scrollbar */
     }
-
-    .cardFace {
-        display: block;
+    
+    /* Remove any transforms on the backface content */
+    .cardBack .description_container {
+        transform: none;
     }
 }
 
