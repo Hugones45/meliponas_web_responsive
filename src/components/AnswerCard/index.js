@@ -22,7 +22,9 @@ export const AnswerCard = () => {
 
     const returnBooleans = () => {
         setShowDisplayAnswers(!showDisplayAnswers)
-        setShowTheBees(!showTheBees)
+        if (showTheBees) {
+            setShowTheBees(!showTheBees)
+        }
     }
 
     const getBees = async () => {
