@@ -24,7 +24,7 @@ export const NavBar = () => {
                     <NavLink to="/pageCuriosities">Meliponiculture and Apiculture</NavLink>
                     <NavLink to="/lonelyOrSwarm">Lonely Ones or the Swarm</NavLink>
 
-                    {counter > 2 && (
+                    {counter > 1 && (
                         <motion.div animate={{ x: 100 }}>
                             <NavLink className="surpriseRegularScreen" to="/surprise">Surprise!</NavLink>
                         </motion.div>
@@ -44,7 +44,7 @@ export const NavBar = () => {
                 <NavLink className="navNamesResponsive" onClick={() => showTheScreen()} to="/pageCuriosities">Meliponiculture and Apiculture</NavLink>
                 <NavLink className="navNamesResponsive" onClick={() => showTheScreen()} to="/lonelyOrSwarm">Lonely Ones or the Swarm</NavLink>
 
-                {counter > 2 && (
+                {counter > 1 && (
                     <NavLink className="navNamesResponsive" onClick={() => showTheScreen()} to="/surprise">Surprise!</NavLink>
                 )}
             </nav>}

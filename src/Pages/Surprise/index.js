@@ -42,7 +42,7 @@ export const Surprise = () => {
     return (
         <>
             {
-                counter > 2 && <div
+                counter > 1 && <div
                     className="fade-in-text" style={{
                         backgroundImage: `url(${wallpaper})`,
                         backgroundPosition: "center",
@@ -53,23 +53,29 @@ export const Surprise = () => {
                     <div className="backSentence"
                         style={{ backgroundColor: 'blanchedalmond' }}
                     >
+
                         <p>Click on the sentence below!</p>
+
                         <p
 
                             style={{
                                 fontSize: `${lettersSize}px`,
                                 color: byColors(),
-                                fontWeight: 'bold'
+                                fontWeight: 'bold',
+                                marginBottom: 0
                             }}
+                            className="workTogether"
                             onClick={letsWordTogether}>Let's work together!</p>
+
+                        {lettersSize > 100 && <Button text='Reset joke!' functions={() => setLettersSize(20)} />
+                        }
                         <p
                             style={{ fontSize: '30px', fontWeight: 'bold' }}
                             onClick={letsWordTogether}>For the world! With the bees!</p>
+
+
                     </div>
-                    <div>
-                        {lettersSize > 100 && <Button text='Reset joke!' functions={() => setLettersSize(20)} />
-                        }
-                    </div>
+
                 </div>
             }
         </>
