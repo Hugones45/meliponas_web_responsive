@@ -28,11 +28,12 @@ a:link {
 }
 
 .active {
-    background-color: black;
+    background-color: black !important;
     padding: 8px;
     border-radius: 10px;
-    color: yellow;
+    color: yellow !important;
 }
+
 
 .navContent {
 display: flex;
