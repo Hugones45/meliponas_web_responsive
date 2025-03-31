@@ -105,7 +105,6 @@ export const Home = () => {
                     />
                 </>}
 
-            {/* <AnswerButton propToggle={answerBees} number={number} setPhrase={setPhrase} phrase={phrase} /> */}
         </div >
     );
 }
